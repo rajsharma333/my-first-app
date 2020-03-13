@@ -1,0 +1,18 @@
+<div>
+    <h2>Students List</h2>
+    <div class="student-list">
+        <ul *ngFor="let student of studentList;">
+            <li [ngClass]="{'red': student.exp > 1}">Name : {{ student.name | uppercase }}</li>
+            <li [ngStyle]="{'display': student.exp > 0 ? '' : 'none'}">Experience: {{ student.exp }}</li>
+            <li  [ngSwitch]="student.proficiency">Proficiency: 
+                <span *ngSwitchCase="'good'">30%</span>
+                <span *ngSwitchCase="'above expectation'">90%</span>
+                <span *ngSwitchCase="'poor'">-10%</span>
+                <span *ngSwitchDefault>0</span>
+            </li>
+            <li>Course Fee: {{ student.coursePrice | discount:student.coursePrice > 1000  && 10 }}</li>
+        </ul>
+    </div>
+    <input type="button" value="Click Me" (click)="outputClicked()" />
+</div>
+

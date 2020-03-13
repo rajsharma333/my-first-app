@@ -1,0 +1,47 @@
+[
+    {
+      "ID": "1",
+      "Name": "Richa",
+      "Gender": "Female",
+      "Email": "richusharma.87@gmail.com",
+      "Phone": "9999999999",
+      "Course": "Angular",
+      "Course Fee": "10000"
+    },
+    {
+        "ID": "2",
+        "Name": "Anjali",
+        "Gender": "Female",
+        "Email": "anjali@gmail.com",
+        "Phone": "9999999999",
+        "Course": "Angular",
+        "Course Fee": "10000"
+    },
+    {
+        "ID": "3",
+        "Name": "Neeraj",
+        "Gender": "Male",
+        "Email": "neeraj@gmail.com",
+        "Phone": "9999999999",
+        "Course": "Angular",
+        "Course Fee": "10000"
+    },
+    {
+        "ID": "4",
+        "Name": "Deepak",
+        "Gender": "Male",
+        "Email": "deepak@gmail.com",
+        "Phone": "9999999999",
+        "Course": "Angular",
+        "Course Fee": "10000"
+    },
+    {
+        "ID": "5",
+        "Name": "Gautam",
+        "Gender": "Male",
+        "Email": "gautam@gmail.com",
+        "Phone": "9999999999",
+        "Course": "Angular",
+        "Course Fee": "10000"
+    }
+]

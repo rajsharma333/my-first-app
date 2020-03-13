@@ -1,0 +1,41 @@
+
+
+
+<div class="toolbar" role="banner">
+  Welcome To Angular Batch
+</div>
+
+<div class="content" role="main">
+  <p>In this tutorial we will create a small student application. Here we will have a form to add a new student informaton.
+    A list page to show the list of all students and a detail page to show the details of a perticuar student. 
+    So let's start. Below are three buttons to navigate to the perticular page.
+  </p>
+
+  <nav class="card-container">
+    <a class="card card-small" [title] = "addStudentText" href="#" (click)="click(addStudent)" >
+      {{ addStudentText }}
+    </a>
+    <a 
+      class="card card-small" 
+      [title] = "viewStudentText" 
+      href="#"
+      (click)="click(studentList)"
+    >
+      {{ viewStudentText }}
+    </a>
+    <a class="card card-small" [title] = "updateStudentText" href="#">
+      {{ updateStudentText }}
+    </a>
+    <a class="card card-small" routerLink="view" routerLinkActive="active">View</a>
+  </nav>
+
+  <div >
+    <app-add-student #addStudent></app-add-student>
+    <app-student-list #studentList [studentList]="students" (clicked)="onChildClicked($event)"></app-student-list>
+    <router-outlet></router-outlet>
+  </div >
+  
+  <div *ngIf="showExample === 1">{{ clickedButton }}</div> 
+
+</div>
+

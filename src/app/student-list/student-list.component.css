@@ -1,0 +1,17 @@
+:host{
+    display: none;
+}
+
+:host.is-show {
+    display: block;
+}
+
+.student-list {
+    display: flex;
+}
+
+.student-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 30px 25px 0;
+}
